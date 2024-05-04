@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/reset.css') }}"
+    />
+    <title>PLantix</title>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <div class="nav">
+      <div class="nav_container">
+        <div class="logo">
+          <img
+            src="{{ url_for('static', filename='images/Logo.png') }}"
+            alt=""
+            class="nav_logo_image"
+          />
+          <p>PLantix</p>
+        </div>
+        <div class="nav_menu">
+          <div class="nav_items" id="plant_shop"><p>Home</p></div>
+          <div class="nav_items" id="category"><p>Login</p></div>
+          <div class="nav_items" id="about"><p>PLantix</p></div>
+          <div class="nav_items" id="contact"><p>Contact</p></div>
+        </div>
+      </div>
+    </div>
+    <!-- Content -->
+    <div class="content">
+      <div class="container" id="container1">
+        <div class="container_background">
+          <div class="content_container">
+            <div class="content_container_title_container">
+              <h1 class="content_container_title">Login now !</h1>
+            </div>
+            <p class="content_container_p">
+              Introducing a revolutionary website dedicated to identifying plant
+              pests, created by Hien and Van Anh. This platform offers
+              comprehensive assistance in recognizing and dealing with harmful
+              pests affecting plants. With expertise from the creators, users
+              can effectively safeguard their plants and promote healthy growth.
+            </p>
+            <a href="#" class="content_container_button" style="--clr: #6eff3e"
+              ><span class="content_container_button_span">Plantix's magic</span
+              ><i></i
+            ></a>
+          </div>
+          <div class="login_container">
+            <!--ring div starts here-->
+            <div class="ring">
+              <i style="--clr: #00ff0a"></i>
+              <i style="--clr: #ff0057"></i>
+              <i style="--clr: #fffd44"></i>
+              <div class="login">
+                <h2>Login</h2>
+                <div class="inputBx">
+                  <input type="text" placeholder="Username" />
+                </div>
+                <div class="inputBx">
+                  <input type="password" placeholder="Password" />
+                </div>
+                <div class="inputBx">
+                  <input type="submit" value="Sign in" />
+                </div>
+                <div class="links">
+                  <a href="#">Forget Password</a>
+                  <a href="#">Sign Up</a>
+                </div>
+              </div>
+            </div>
+            <!--ring div ends here-->
+          </div>
+        </div>
+      </div>
+      <div class="container" id="container2">
+        <div class="submit_container">
+          <div class="submit_container1">
+            <h1 class="submit_container1_title">File Upload</h1>
+            <div class="submit_place">
+              <img
+                src="/static/images/UploadIcon.png"
+                alt=""
+                class="submit_place_img"
+              />
+              <p class="submit_place_title">Drag and Drop files to upload</p>
+              <p class="submit_place_title">----- Or -----</p>
+              <button class="submit_place_button">Browse</button>
+            </div>
+          </div>
+          <div class="submit_container2">
+            <h1 class="submit_container2_title">File Uploading</h1>
+            <div class="submit_progress"></div>
+            <div class="submit_container2_button">
+              <buton class="submit_upload">Upload</buton>
+              <buton class="submit_cancel">Cancel</buton>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container" id="container3">
+        <div class="chatbot_container1">
+          <div class="chatbox_title">
+            <img
+              src="/static/images/Chatbox_icon.jpg"
+              alt=""
+              class="chatbox_logo"
+            />
+            <p class="chatbox_name">PLANTIX</p>
+          </div>
+          <div class="history_container">
+            <img
+              src="/static/images/History_icon.png"
+              alt=""
+              class="history_img"
+            />
+            <p class="history_icon">History</p>
+          </div>
+          <div class="SubmitAgain_container">
+            <img
+              src="/static/images/ScanImage.png"
+              alt=""
+              class="SubmitAgain_img"
+            />
+            <p class="SubmitAgain_title">Submit Again!</p>
+          </div>
+        </div>
+        <div class="chatbot_container2">
+          <div class="InfoHere_container">
+            <div class="InfoHere" id="InfoHere1">
+              <p class="InfoHere_title">Suggestion here!</p>
+            </div>
+            <div class="InfoHere" id="InfoHere2">
+              <p class="InfoHere_title">Plantix's magic</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+      <div class="footer_container">
+        <div class="tittle_transparent">
+          <h1 class="transparent_effect">PLANTIX</h1>
+        </div>
+        <div class="contacts_container">
+          <div class="contacts_button" id="icon_facebook">
+            <div class="icon">
+              <img
+                src="/static/images/Icon/Icon_facebook.png"
+                alt=""
+                class="contacts_icon"
+              />
+            </div>
+          </div>
+          <div class="contacts_button" id="icon_twitter">
+            <div class="icon">
+              <img
+                src="/static/images/Icon/Icon_twitter.png"
+                alt=""
+                class="contacts_icon"
+              />
+            </div>
+          </div>
+          <div class="contacts_button" id="icon_instagram">
+            <div class="icon">
+              <img
+                src="/static/images/Icon/Icon_instagram.png"
+                alt=""
+                class="contacts_icon"
+              />
+            </div>
+          </div>
+          <div class="contacts_button" id="icon_youtube">
+            <div class="icon">
+              <img
+                src="/static/images/Icon/Icon_youtube.png"
+                alt=""
+                class="contacts_icon"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/app.js') }}">
+         document.getElementById("btn").onclick = function() {
+        alert("Chuyển sang màn hình Submit");
+    };
+    </script>
+  </body>
+</html>
