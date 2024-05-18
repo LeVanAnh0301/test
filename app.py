@@ -1,5 +1,5 @@
 import os
-from flask import Flask, redirect, render_template, request
+from flask import Flask, redirect, render_template, request, url_for
 from PIL import Image
 import torchvision.transforms.functional as TF
 import cnn
@@ -29,21 +29,37 @@ import pandas as pd
 app = Flask(__name__)
 app.debug = True 
 
+#màn hình start
 @app.route('/')
-def home_page():
+def welcome():
+    return redirect('/login')
+ 
+# màn hình chính
+@app.route('/home')
+def home():
     return render_template('index.html')
 
-# @app.route('/contact')
-# def contact():
-#     return render_template('contact-us.html')
+# đăng ký
+@app.route('/signup')
+def signup():
+    return render_template('signup.html')
 
-@app.route('/signup', methods=['GET', 'POST'])
+# Route for handling the login page logic
+@app.route('/login', methods=['GET', 'POST'])
 def login():
-    return render_template('login.html')
+    error = None
+    if request.method == 'POST':
+        if request.form['username'] == 'admin' or request.form['password'] == 'admin':
+            return redirect(url_for('home'))
+        else:
+            # return redirect(url_for('home'))
+            error = 'Invalid Credentials. Please try again.'
+    return render_template('login.html', error=error)
 
-# @app.route('/mobile-device')
-# def mobile_device_detected_page():
-#     return render_template('mobile-device.html')
+#màn hình đề xuất giải pháp và suggest sản phẩm
+@app.route('/chatbox')
+def chatbox_page():
+    return render_template('chatbox.html')
 
 # @app.route('/submit', methods=['GET', 'POST'])
 # def submit():
@@ -69,5 +85,5 @@ def login():
 #     return render_template('market.html', supplement_image = list(supplement_info['supplement image']),
 #                            supplement_name = list(supplement_info['supplement name']), disease = list(disease_info['disease_name']), buy = list(supplement_info['buy link']))
 
-if __name__ == "__main__":
-    app.run(debug = True)
+if __name__ == '__main__':
+    app.run(host='localhost', port=5000, debug=True)

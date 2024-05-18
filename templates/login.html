@@ -36,19 +36,25 @@
               <i style="--clr: #fffd44"></i>
               <div class="login">
                 <h2>Login</h2>
-                <div class="inputBx">
-                  <input type="text" placeholder="Username" />
-                </div>
-                <div class="inputBx">
-                  <input type="password" placeholder="Password" />
-                </div>
-                <div class="inputBx">
-                  <input type="submit" value="Sign in" />
-                </div>
-                <div class="links">
-                  <a href="#">Forget Password</a>
-                  <a href="#">Sign Up</a>
-                </div>
+                <div class="msg">{{ msg }}</div>
+                <form action="{{ url_for('login') }}" method="post">
+                  <div class="inputBx">
+                    <input type="text" id="username" placeholder="Username" name="username" required>
+                  </div>
+                  <div class="inputBx">
+                    <input type="password" id="password" placeholder="Password" name="password" required>
+                  </div>
+                  <div class="inputBx">
+                    <input type="submit" id="submit" value="Sign in" />
+                  </div>
+                  <div class="links">
+                    <a href="#" id="forgetPasswordLink">Forget Password</a>
+                    <a href="{{ url_for('signup') }}" id="signUpLink">Sign Up</a>
+                  </div>
+                </form>
+                {% if error %}
+                <p class="error"><strong>Error:</strong> {{ error }}
+                    {% endif %}
               </div>
             </div>
             <!--ring div ends here-->
@@ -56,6 +62,6 @@
         </div>
       </div>
     </div>
-    <script src="/app.js"></script>
+    <script src="login.js"></script>
   </body>
 </html>
