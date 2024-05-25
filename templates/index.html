@@ -3,197 +3,266 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <link rel="stylesheet" href="../static/css/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
-      href="{{ url_for('static', filename='css/style.css') }}"
     />
     <link
       rel="stylesheet"
-      href="{{ url_for('static', filename='css/reset.css') }}"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
-    <title>PLantix</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <!-- Navigation -->
-    <div class="nav">
-      <div class="nav_container">
-        <div class="logo">
-          <img
-            src="{{ url_for('static', filename='images/Logo.png') }}"
-            alt=""
-            class="nav_logo_image"
-          />
-          <p>PLantix</p>
+    <!-- Navigation & Introduce started -->
+
+    <div class="Navigation-Introduce_wrap">
+      <!-- Navigation container started -->
+      <div class="Navigation_container">
+        <div class="Navigation-button_container">
+          <a href="./index.html">
+            <div class="Navigation-button">
+              <b>About</b>
+            </div>
+          </a>
+          <a href="#Instruction">
+            <div class="Navigation-button">
+              <b>Instruction</b>
+            </div>
+          </a>
+          <a href="/Chatbox/ChatBox.html" target="_blank">
+            <div class="Navigation-button"><b>Magic</b></div>
+          </a>
+          <a href="#Footer">
+            <div class="Navigation-button">
+              <b>Contact</b>
+            </div>
+          </a>
         </div>
-        <div class="nav_menu">
-          <div class="nav_items" id="plant_shop"><p>Home</p></div>
-          <div class="nav_items" id="category"><p>Login</p></div>
-          <div class="nav_items" id="about"><p>PLantix</p></div>
-          <div class="nav_items" id="contact"><p>Contact</p></div>
+
+        <div class="Website-name">Plantix's magic</div>
+
+        <div class="Navigation-SignIn_container">
+          <a href="./SignIn.html">
+            <div class="SignIn-button">
+              <b>Sign In</b>
+            </div>
+          </a>
         </div>
       </div>
-    </div>
-    <!-- Content -->
-    <div class="content">
-      <div class="container" id="container1">
-        <div class="container_background">
-          <div class="content_container">
-            <div class="content_container_title_container">
-              <h1 class="content_container_title">Login now !</h1>
-            </div>
-            <p class="content_container_p">
-              Introducing a revolutionary website dedicated to identifying plant
-              pests, created by Hien and Van Anh. This platform offers
-              comprehensive assistance in recognizing and dealing with harmful
-              pests affecting plants. With expertise from the creators, users
-              can effectively safeguard their plants and promote healthy growth.
+      <!-- Navigation container end -->
+
+      <!-- Introduce started -->
+      <div class="Introduce_wrap">
+        <div class="Introduce_container">
+          <div class="Introduce-content">
+            <h1 class="Introduce-Heading">
+              Optimize Your Harvests: Elevate Crop Quality and Yield!
+            </h1>
+            <p>
+              Hien's and Van Anh's innovative website assists in identifying and
+              managing plant pests, promoting effective plant protection and
+              growth.
             </p>
-            <a href="#" class="content_container_button" style="--clr: #6eff3e"
-              ><span class="content_container_button_span">Plantix's magic</span
-              ><i></i
-            ></a>
           </div>
-          <div class="login_container">
-            <!--ring div starts here-->
-            <div class="ring">
-              <i style="--clr: #00ff0a"></i>
-              <i style="--clr: #ff0057"></i>
-              <i style="--clr: #fffd44"></i>
-              <div class="login">
-                <h2>Login</h2>
-                <div class="inputBx">
-                  <input type="text" placeholder="Username" />
-                </div>
-                <div class="inputBx">
-                  <input type="password" placeholder="Password" />
-                </div>
-                <div class="inputBx">
-                  <input type="submit" value="Sign in" />
-                </div>
-                <div class="links">
-                  <a href="#">Forget Password</a>
-                  <a href="#">Sign Up</a>
-                </div>
-              </div>
-            </div>
-            <!--ring div ends here-->
-          </div>
+          <img src="/Images/IMG_3914 (1).PNG" alt="" class="Introduce-image" />
+        </div>
+        <div class="custom-shape-divider-bottom-1715692097">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+              opacity=".25"
+              class="shape-fill"
+            ></path>
+            <path
+              d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+              opacity=".5"
+              class="shape-fill"
+            ></path>
+            <path
+              d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+              class="shape-fill"
+            ></path>
+          </svg>
         </div>
       </div>
-      <div class="container" id="container2">
-        <div class="submit_container">
-          <div class="submit_container1">
-            <h1 class="submit_container1_title">File Upload</h1>
-            <div class="submit_place">
-              <img
-                src="/static/images/UploadIcon.png"
-                alt=""
-                class="submit_place_img"
-              />
-              <p class="submit_place_title">Drag and Drop files to upload</p>
-              <p class="submit_place_title">----- Or -----</p>
-              <button class="submit_place_button">Browse</button>
-            </div>
-          </div>
-          <div class="submit_container2">
-            <h1 class="submit_container2_title">File Uploading</h1>
-            <div class="submit_progress"></div>
-            <div class="submit_container2_button">
-              <buton class="submit_upload">Upload</buton>
-              <buton class="submit_cancel">Cancel</buton>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container" id="container3">
-        <div class="chatbot_container1">
-          <div class="chatbox_title">
-            <img
-              src="/static/images/Chatbox_icon.jpg"
-              alt=""
-              class="chatbox_logo"
-            />
-            <p class="chatbox_name">PLANTIX</p>
-          </div>
-          <div class="history_container">
-            <img
-              src="/static/images/History_icon.png"
-              alt=""
-              class="history_img"
-            />
-            <p class="history_icon">History</p>
-          </div>
-          <div class="SubmitAgain_container">
-            <img
-              src="/static/images/ScanImage.png"
-              alt=""
-              class="SubmitAgain_img"
-            />
-            <p class="SubmitAgain_title">Submit Again!</p>
-          </div>
-        </div>
-        <div class="chatbot_container2">
-          <div class="InfoHere_container">
-            <div class="InfoHere" id="InfoHere1">
-              <p class="InfoHere_title">Suggestion here!</p>
-            </div>
-            <div class="InfoHere" id="InfoHere2">
-              <p class="InfoHere_title">Plantix's magic</p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <!-- Introduce end -->
     </div>
-    <!-- Footer -->
-    <div class="footer">
-      <div class="footer_container">
-        <div class="tittle_transparent">
-          <h1 class="transparent_effect">PLANTIX</h1>
+
+    <!-- Navigation & Introduce end -->
+
+    <!-- Body and content started-->
+    <div class="Body-content_wrap">
+      <!-- Instruction started -->
+      <section id="Instruction">
+        <div class="Instruction_wrap">
+          <h1 class="Instruction-heading">HOW TO USE IT?</h1>
+          <p class="Instruction-paragraph">
+            Follow these steps to effectively utilize "Plantix's Magic": Read
+            the instructions carefully, apply accordingly, and observe results
+          </p>
+          <div class="Instruction_container">
+            <div class="Instruction-box">
+              <img
+                src="/Images/camera-viewfinder.png"
+                alt=""
+                class="Instruction-img"
+              />
+              <b class="Instruction-box-heading">Step 1</b>
+              <p class="Instruction-box-paragraph">Take photos of your crops</p>
+            </div>
+            <div class="Instruction-box">
+              <img src="/Images/add-image.png" alt="" class="Instruction-img" />
+              <b class="Instruction-box-heading">Step 2</b>
+              <p class="Instruction-box-paragraph">Upload your photos</p>
+            </div>
+            <div class="Instruction-box">
+              <img
+                src="/Images/microchip-ai (1).png"
+                alt=""
+                class="Instruction-img"
+              />
+              <b class="Instruction-box-heading-junior">Step 3</b>
+              <p class="Instruction-box-paragraph">
+                Let
+                <b
+                  class="Instruction-box-hightlight"
+                  id="Instruction-box-hightlight-Plantix"
+                  >Plantix
+                </b>
+                work its
+                <b
+                  class="Instruction-box-hightlight"
+                  id="Instruction-box-hightlight-Magic"
+                >
+                  Magic
+                </b>
+              </p>
+            </div>
+            <div class="Instruction-box">
+              <img src="/Images/wheat.png" alt="" class="Instruction-img" />
+              <b class="Instruction-box-heading">Step 4</b>
+              <p class="Instruction-box-paragraph">
+                Sit tight and enjoy the results
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="contacts_container">
-          <div class="contacts_button" id="icon_facebook">
-            <div class="icon">
-              <img
-                src="/static/images/Icon/Icon_facebook.png"
-                alt=""
-                class="contacts_icon"
-              />
+      </section>
+      <!-- Instruction end -->
+
+      <!-- Submit started -->
+      <section id="Submit">
+        <div class="Submit_wrap">
+          <div class="Submit_container">
+            <div class="Submit-article">
+              <h1 class="Submit-heading">Upload a photo of your crops here!</h1>
+              <p class="Submit-paragraph">
+                Take as sharp a photo of your crops as possible. Our job is to
+                analyze photos and identify pests. Your job is just to sit back
+                and wait for the miracle to happen...
+              </p>
             </div>
-          </div>
-          <div class="contacts_button" id="icon_twitter">
-            <div class="icon">
-              <img
-                src="/static/images/Icon/Icon_twitter.png"
-                alt=""
-                class="contacts_icon"
-              />
+            <!-- Submit box started -->
+            <div class="Submit-box_container">
+              <header>Upload here</header>
+              <form action="#">
+                <input class="file-input" type="file" name="file" hidden />
+                <i class="fas fa-cloud-upload-alt"></i>
+                <p class="Submit-box-paragraph">Browse File to Upload</p>
+              </form>
+              <section class="progress-area"></section>
+              <section class="uploaded-area"></section>
             </div>
-          </div>
-          <div class="contacts_button" id="icon_instagram">
-            <div class="icon">
-              <img
-                src="/static/images/Icon/Icon_instagram.png"
-                alt=""
-                class="contacts_icon"
-              />
-            </div>
-          </div>
-          <div class="contacts_button" id="icon_youtube">
-            <div class="icon">
-              <img
-                src="/static/images/Icon/Icon_youtube.png"
-                alt=""
-                class="contacts_icon"
-              />
-            </div>
+            <!-- Submit box end -->
           </div>
         </div>
-      </div>
+      </section>
+      <!-- Submit end -->
     </div>
-    <script src="{{ url_for('static', filename='js/app.js') }}">
-         document.getElementById("btn").onclick = function() {
-        alert("Chuyển sang màn hình Submit");
-    };
-    </script>
+    <!-- Body and content end -->
+
+    <!-- Footer started-->
+    <section id="Footer">
+      <div class="Footer_wrap">
+        <div class="Footer-name">Plantix's magic</div>
+        <div class="Footer-button_container">
+          <div class="Footer-button">
+            <b class="Footer-button-content">Home</b>
+          </div>
+          <div class="Footer-button">
+            <b class="Footer-button-content">About</b>
+          </div>
+          <div class="Footer-button">
+            <b class="Footer-button-content">Service</b>
+          </div>
+          <div class="Footer-button">
+            <b class="Footer-button-content">Magic</b>
+          </div>
+        </div>
+        <div class="Footer-contacts_container">
+          <div class="Footer-button-contacts">
+            <img
+              src="/Images/Icon_facebook.png"
+              alt=""
+              class="Footer-button-icon"
+            />
+          </div>
+          <div class="Footer-button-contacts">
+            <img
+              src="/Images/Icon_instagram.png"
+              alt=""
+              class="Footer-button-icon"
+            />
+          </div>
+          <div class="Footer-button-contacts">
+            <img
+              src="/Images/Icon_twitter.png"
+              alt=""
+              class="Footer-button-icon"
+            />
+          </div>
+          <div class="Footer-button-contacts">
+            <img
+              src="/Images/Icon_youtube.png"
+              alt=""
+              class="Footer-button-icon"
+            />
+          </div>
+        </div>
+        <div class="Footer-line"></div>
+        <div class="Footer-made">Website by Hien</div>
+      </div>
+    </section>
+    <!-- Footer end -->
+
+    <script src=""></script>
   </body>
 </html>

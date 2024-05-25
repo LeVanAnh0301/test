@@ -1,0 +1,132 @@
+.Body-content_wrap {
+  display: flex;
+  height: 598px;
+}
+/* Navigation */
+.Navigation_wrap {
+  width: 200px;
+  height: 100%;
+  background: rgb(85, 119, 89);
+  background: linear-gradient(
+    180deg,
+    rgba(85, 119, 89, 1) 16%,
+    rgba(95, 130, 91, 1) 32%,
+    rgba(120, 152, 108, 1) 50%,
+    rgba(154, 192, 131, 1) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Navigation-WebsiteName {
+  color: white;
+  font-family: Lobster Two;
+  font-size: 33px;
+  width: 300px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Navigation-button_wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Navigation-button_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  height: 60%;
+  width: 100%;
+  margin-bottom: 100px;
+}
+.Navigation-button {
+  font-family: Roboto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  color: white;
+}
+.Navigation-button:hover {
+  cursor: pointer;
+  position: relative;
+}
+.Navigation-button::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  background: white;
+  transition: width 0.3s ease-in-out;
+}
+.Navigation-button:hover:after {
+  width: 100%;
+}
+
+/* Chatbox */
+.ChatBox_wrap {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.Chatbox-heading {
+  font-family: Bebas Neue;
+  margin-bottom: 10px;
+  font-size: 50px;
+}
+.ChatBox-content {
+  font-family: Roboto;
+  text-align: center;
+  width: 600px;
+  margin-bottom: 50px;
+}
+.ChatBox_container {
+  width: 70%;
+  height: 400px;
+  border-radius: 20px;
+  border: 2px solid black;
+  padding: 10px 15px 10px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ChatBox-Warning {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  height: 30px;
+  border: 2px solid black;
+  border-radius: 15px;
+  font-family: Roboto;
+}
+.ChatBox-Text_container {
+  width: 100%;
+  height: 100%;
+  padding: 50px 0px 0px 0px;
+}
+.ChatBox-Welcome {
+  font-family: Roboto;
+  background: #a0b698;
+  max-width: 50%;
+  min-width: 150px;
+  padding: 10px 8px 10px 8px;
+  margin: 3px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  float: left;
+  clear: left;
+}

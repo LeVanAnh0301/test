@@ -3,51 +3,94 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="/static/css/style.css" />
-    <link rel="stylesheet" href="/static/css/reset.css" />
+    <title>ChatBox</title>
+    <link rel="stylesheet" href="../static/css/ChatBox.css" />
+    <link rel="stylesheet" href="../static/css/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="content">
-      <div class="container" id="container3">
-        <div class="chatbot_container1">
-          <div class="chatbox_title">
-            <img
-              src="/static/images/Chatbox_icon.jpg"
-              alt=""
-              class="chatbox_logo"
-            />
-            <p class="chatbox_name">PLANTIX</p>
-          </div>
-          <div class="history_container">
-            <img
-              src="/static/images/History_icon.png"
-              alt=""
-              class="history_img"
-            />
-            <p class="history_icon">History</p>
-          </div>
-          <div class="SubmitAgain_container">
-            <img
-              src="/static/images/ScanImage.png"
-              alt=""
-              class="SubmitAgain_img"
-            />
-            <p class="SubmitAgain_title">Submit Again!</p>
+    <!-- Body and content started-->
+    <div class="Body-content_wrap">
+      <!-- Navigation start -->
+      <div class="Navigation_wrap">
+        <div class="Navigation-WebsiteName">Plantix's magic</div>
+        <div class="Navigation-button_wrap">
+          <div class="Navigation-button_container">
+            <a href="/Home/index.html">
+              <div class="Navigation-button">
+                <b>Home</b>
+              </div>
+            </a>
+            <a href="/Home/index.html#Instruction">
+              <div class="Navigation-button">
+                <b>Instruction</b>
+              </div>
+            </a>
+            <a href="/Home/index.html#Submit">
+              <div class="Navigation-button"><b>Submit</b></div>
+            </a>
+            <a href="/Home/index.html#Footer">
+              <div class="Navigation-button">
+                <b>Contact</b>
+              </div>
+            </a>
           </div>
         </div>
-        <div class="chatbot_container2">
-          <div class="InfoHere_container">
-            <div class="InfoHere" id="InfoHere1">
-              <p class="InfoHere_title">Suggestion here!</p>
-            </div>
-            <div class="InfoHere" id="InfoHere2">
-              <p class="InfoHere_title">Plantix's magic</p>
+      </div>
+
+      <!-- Navigation start -->
+      <!-- Chatbox start -->
+      <div class="ChatBox_wrap">
+        <h1 class="Chatbox-heading">
+          This is the "diagnosis" part of your crops
+        </h1>
+        <p class="ChatBox-content">
+          We will diagnose the pest issue and recommend an effective,
+          eco-friendly solution to address the problem
+        </p>
+        <div class="ChatBox_container">
+          <div class="ChatBox-Warning">
+            <i style="font-size: 20px" class="fas">&#xf06a;</i>
+            <p>Please submit an image to get started</p>
+          </div>
+          <div class="ChatBox-Text_container">
+            <div class="ChatBox-Welcome">
+              <p>Hello! Please submit some images to continue.</p>
             </div>
           </div>
         </div>
       </div>
+
+      <!-- Chatbox end -->
     </div>
-    <script src="/app.js"></script>
+    <!-- Body and content end -->
+    <script src=""></script>
   </body>
 </html>

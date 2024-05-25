@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SignUp</title>
-    <link rel="stylesheet" href="../static/css/SignUp.css" />
+    <title>SignIn</title>
+    <link rel="stylesheet" href="../static/css/SignIn.css" />
     <link rel="stylesheet" href="../static/css/reset.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -36,14 +36,14 @@
     />
   </head>
   <body>
-    <!-- SignUp & Navigation started -->
+    <!-- SignIn & Navigation started -->
 
     <div class="Navigation-Introduce_wrap">
       <div class="Navigation-background">
         <!-- Navigation container started -->
         <div class="Navigation_container">
           <div class="Navigation-button_container">
-            <a href="./index.html">
+            <a href="/Home/index.html">
               <div class="Navigation-button">
                 <b>About</b>
               </div>
@@ -53,7 +53,7 @@
                 <b>Instruction</b>
               </div>
             </a>
-            <a href="./index.html#Footer">
+            <a href="/Home/index.html#Footer">
               <div class="Navigation-button">
                 <b>Contact</b>
               </div>
@@ -62,38 +62,33 @@
 
           <div class="Website-name">Plantix's magic</div>
 
-          <div class="Navigation-SignUp_container">
+          <div class="Navigation-SignIn_container">
             <a href="./index.html"
               ><div class="Home-button"><b>Home</b></div></a
             >
           </div>
         </div>
         <!-- Navigation container end -->
-        <!-- SignUp container start -->
-        <div class="SignUp_wrap">
-          <div class="SignUp-content_container">
-            <h1 class="SignUp-content-heading">
-              Click here to sign up and begin your journey with us
+        <!-- SignIn container start -->
+        <div class="SignIn_wrap">
+          <div class="SignIn-content_container">
+            <h1 class="SignIn-content-heading">
+              Unlock Your Digital Experience: Sign In
             </h1>
-            <p class="SignUp-content-paragraph">
-              Don't miss out - sign up today and unlock exclusive benefits. Join
-              our community to access cutting-edge solutions, tailored support,
-              and a world of opportunities. Act now before time runs out. Click
-              the button below to secure your spot and elevate your
-              productivity.
+            <p class="SignIn-content-paragraph">
+              Experience Plantix's enchantment by logging in! Unlock the world
+              of comprehensive plant care, expert tips, and vibrant community
+              interactions. Step into a greener, more flourishing garden with
+              just one click—join us today and transform your green thumb into a
+              magic wand!
             </p>
           </div>
-          <!-- SignUp box start -->
-          <div class="SignUp-box_container">
+          <!-- SignIn box start -->
+          <div class="SignIn-box_container">
             <div class="form-box">
               <div class="form-value">
                 <form action="">
-                  <h2>Sign Up</h2>
-                  <div class="inputbox">
-                    <ion-icon name="lock-closed-outline"></ion-icon>
-                    <input type="text" required />
-                    <label for="">Name</label>
-                  </div>
+                  <h2>Sign In</h2>
                   <div class="inputbox">
                     <ion-icon name="mail-outline"></ion-icon>
                     <input type="email" required />
@@ -104,18 +99,28 @@
                     <input type="password" required />
                     <label for="">Password</label>
                   </div>
-                  <button class="CreateAccount-btn">Create account</button>
+                  <button class="LogIn-btn">Sign in</button>
+                  <div class="register">
+                    <p>
+                      Don't have a account ?
+                      <a
+                        style="text-decoration: underline"
+                        href="./SignUp.html"
+                        >Sign Up</a
+                      >
+                    </p>
+                  </div>
                 </form>
               </div>
             </div>
           </div>
-          <!-- SignUp box end -->
+          <!-- SignIn box end -->
         </div>
-        <!-- SignUp container end -->
+        <!-- SignIn container end -->
       </div>
     </div>
 
-    <!-- SignUp & Introduce end -->
-    <script src=""></script>
+    <!-- SignIn & Introduce end -->
+    <script src="/SignIn/SignIn.Js"></script>
   </body>
 </html>
